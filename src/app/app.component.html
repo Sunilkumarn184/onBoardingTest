@@ -1,0 +1,173 @@
+<div class="container main-container">
+  <div class="container-center">
+    <div class="row-block">
+      <div class="row stepper-align">
+        <div class="header-block">
+          <div class="title-container">
+            <img class="logo" src="/assets/eden-logo.png" />
+          </div>
+        </div>
+        <mat-horizontal-stepper class="before-selected" #stepper>
+          <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+              <ng-template matStepLabel></ng-template>
+              <div class="inside-container">
+                <h4>Welcome! First things first...</h4>
+                <h6>You can always change them later</h6>
+                <div class="first-container">
+                  <div class="row">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Full Name</mat-label>
+                      <input
+                        matInput
+                        placeholder="Steve Jobs"
+                        formControlName="FullNametCtrl"
+                        required
+                      />
+                    </mat-form-field>
+                  </div>
+                  <div class="row">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Display Name</mat-label>
+                      <input
+                        matInput
+                        placeholder="Steve"
+                        formControlName="DisplayNameCtrl"
+                        required
+                      />
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="btn-container">
+              <button
+                class="btn-create"
+                mat-button
+                matStepperNext
+                color="primary"
+              >
+                Create Workspace
+              </button>
+            </div>
+          </mat-step>
+          <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup">
+              <ng-template matStepLabel></ng-template>
+              <div class="second-container">
+                <h4>Let's setup a home for all your work</h4>
+                <h6>You can always create another workspace later</h6>
+                <div class="first-container">
+                  <div class="row">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Workspace name</mat-label>
+                      <input
+                        matInput
+                        placeholder="Eden"
+                        formControlName="WorkspaceNameCtrl"
+                        required
+                      />
+                    </mat-form-field>
+                  </div>
+                  <div class="row">
+                    <mat-form-field appearance="outline">
+                      <mat-label>Workspace URL(Optional)</mat-label>
+                      <input
+                        matInput
+                        placeholder="Example"
+                        formControlName="WorkspaceURLCtrl"
+                        required
+                      />
+                    </mat-form-field>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="btn-container">
+              <button class="btn-workspace-create" mat-button matStepperNext>
+                Create Workspace
+              </button>
+            </div>
+          </mat-step>
+
+          <mat-step [stepControl]="thirdFormGroup">
+            <form [formGroup]="thirdFormGroup">
+              <ng-template matStepLabel></ng-template>
+              <div class="second-container">
+                <h4>How are you planning to use Eden?</h4>
+                <h6>We'll streamline your setup experience accordingly</h6>
+                <div class="first-container">
+                  <mat-radio-group
+                    matInput
+                    formControlName="selectedOptionCtrl"
+                  >
+                    <div class="row card-container">
+                      <div class="col-md-6 col-lg-6 col-sm-6 single-card">
+                        <label>
+                          <mat-radio-button
+                            [value]="'Option1'"
+                            class="card-input-element"
+                            >Myself</mat-radio-button
+                          >
+                          <div class="panel panel-default card-input">
+                            <div class="single-card-sub-block">
+                              <img src="/assets/myself.png" />
+                            </div>
+                            <div class="panel-heading card-header-style">
+                              For myself
+                            </div>
+                            <div class="panel-body card-desc">
+                              Write better.Think more clearly.Stay organized
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="col-md-6 col-lg-6 col-sm-6 single-card">
+                        <label>
+                          <mat-radio-button
+                            [value]="'Option2'"
+                            class="card-input-element"
+                            >Myteam</mat-radio-button
+                          >
+                          <div class="panel panel-default card-input">
+                            <div class="single-card-sub-block">
+                              <img src="/assets/myteam.png" />
+                            </div>
+                            <div class="panel-heading card-header-style">
+                              With my team
+                            </div>
+                            <div class="panel-body card-desc">
+                              Wikis, docs, tasks & projects, all in one place
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </mat-radio-group>
+                </div>
+              </div>
+            </form>
+            <div class="btn-container">
+              <button class="btn-workspace-create" mat-button matStepperNext>
+                Create Workspace
+              </button>
+            </div>
+          </mat-step>
+          <mat-step [completed]="completed" [state]="state">
+            <ng-template matStepLabel></ng-template>
+            <p class="done-block">
+              <img class="logo" src="/assets/done.png" />
+            </p>
+            <h4>Congratulations, Eren</h4>
+            <h6>You have completed onboarding, you can start using the Eden</h6>
+            <div class="done-btn-container">
+              <button class="done-btn" (click)="done()" mat-button>
+                Launch Eden
+              </button>
+            </div>
+          </mat-step>
+        </mat-horizontal-stepper>
+      </div>
+    </div>
+  </div>
+</div>

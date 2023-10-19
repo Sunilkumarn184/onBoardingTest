@@ -1,0 +1,222 @@
+.main-container {
+  background: #fff !important;
+  width: 100%;
+  height: 85.6%;
+  margin-top: 50px;
+}
+
+.stepper-align {
+  text-align: center;
+  width: 400px;
+  height: 558px;
+}
+
+.row-block {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-center {
+  margin: 0 auto;
+  align-items: center;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 30px;
+  background: #fff !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+::ng-deep.mdc-text-field--outlined .mdc-floating-label {
+  font-family: inter !important;
+}
+
+.row-align {
+  margin-right: 40px;
+}
+
+.btn-create {
+  color: #fff !important;
+  background: #7048e3;
+  padding: 10px;
+  border-radius: 4px;
+  width: 330px;
+  margin-right: 12px;
+  font-family: inter;
+}
+
+.row-left {
+  margin-left: 0px;
+  font-size: 23px;
+}
+
+.inside-container {
+  margin-top: 50px;
+}
+.btn-container {
+  margin-right: 52px;
+}
+
+.btn-workspace-create {
+  width: 330px;
+  color: #fff !important;
+  background: #7048e3;
+  padding: 10px;
+  border-radius: 4px;
+  margin-right: 12px;
+  font-family: inter;
+}
+
+.first-container {
+  margin-top: 30px;
+}
+
+.second-container {
+  margin-top: 35px;
+}
+
+h4 {
+  font-weight: 800;
+  font-size: x-large;
+  font-family: inter;
+}
+
+h6 {
+  font-size: medium;
+  color: #323232ab;
+  font-family: inter;
+}
+
+.header-block {
+  .logo {
+    margin: auto;
+  }
+
+  .title-container {
+    display: flex;
+  }
+}
+
+.done-block {
+  margin-top: 40px;
+}
+
+.done-btn-container {
+  margin-right: 52px;
+  margin-top: 50px;
+
+  .done-btn {
+    width: 330px;
+    color: #fff !important;
+    background: #7048e3;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 12px;
+    font-family: inter;
+  }
+}
+
+.card-input-element {
+  display: none;
+}
+
+.card-input {
+  margin: 10px;
+  padding: 00px;
+}
+
+.card-input:hover {
+  cursor: pointer;
+}
+
+.card-input-element:checked + .card-input {
+  box-shadow: 0 0 1px 1px #4148cd;
+}
+
+.highlight-card {
+  border: 2px solid #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.card-container {
+  margin-bottom: 20px;
+}
+
+.card-header-style {
+  text-align: left;
+  font-size: medium;
+  font-weight: 600;
+  font-family: inter;
+  padding: 5px;
+}
+
+.card-desc {
+  font-size: small;
+  text-align: left;
+  color: #5f5f5d;
+  font-family: inter;
+  padding: 5px;
+}
+
+.single-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.single-card-sub-block {
+  text-align: left;
+  padding: 5px;
+}
+.mat-stepper-horizontal {
+  margin-top: 30px;
+  width: 400px;
+  font-family: inter !important;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-state-done {
+  background-color: #7048e3;
+}
+
+.mat-step-header[aria-selected="true"] {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.mat-mdc-form-field {
+  margin-top: 16px;
+  font-family: inter !important;
+}
+
+.mat-step-header .mat-step-icon {
+  display: none !important;
+}
+
+.mat-horizontal-stepper-header-line {
+  background-color: #7048e3; /* Adjust to your primary color */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .main-container {
+    background: #fff !important;
+    width: 100%;
+    height: 0 !important;
+    margin-top: 50px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .main-container[_ngcontent-ng-c638767471] {
+    background: #fff !important;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .main-container[_ngcontent-ng-c638767471] {
+    background: #fff !important;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
